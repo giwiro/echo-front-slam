@@ -14,7 +14,7 @@ func main() {
     server := echo.New()
     port := os.Getenv("PORT")
     if (len(port) == 0) {
-        port = "6969"
+        port = "6543"
     }
     server.Static("/static","public/assets")
     server.GET("/*", controller)
